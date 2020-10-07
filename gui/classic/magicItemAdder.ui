@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>magicItemAdder_window</class>
+ <widget class="QDialog" name="magicItemAdder_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>660</width>
+    <height>311</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: rgb(160, 160, 160)</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <widget class="QPushButton" name="magicItemAdderCancel_button">
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border-style: outset;
+border-width: 1px;
+border-radius: 5px;
+border-color: black;
+background-color:rgb(255, 221, 221);
+padding:4px;
+}
+
+QPushButton::hover{
+background-color: rgb(255, 184, 184);
+}
+
+QPushButton::pressed{
+background-color: rgb(255, 140, 140);
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="magicItemAdderAdd_button">
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border-style: outset;
+border-width: 1px;
+border-radius: 5px;
+border-color: black;
+background-color:rgb(218, 255, 212);
+padding:4px;
+}
+
+QPushButton::hover{
+background-color: rgb(182, 255, 181);
+}
+
+QPushButton::pressed{
+background-color: rgb(135, 255, 129);
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Add</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="4" alignment="Qt::AlignTop">
+      <widget class="QLabel" name="magicItemAdderRarity_label">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+border-style: outset;
+border-width: 1px;
+border-radius: 5px;
+border-color: black;
+background-color:rgb(217,217,217);
+padding:3px;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="text">
+        <string>Rarity</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" alignment="Qt::AlignTop">
+      <widget class="QLabel" name="magicItemAdderName_label">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+border-style: outset;
+border-width: 1px;
+border-radius: 5px;
+border-color: black;
+background-color:rgb(217,217,217);
+padding:3px;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2" alignment="Qt::AlignTop">
+      <widget class="QLabel" name="magicItemAdderType_label">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+border-style: outset;
+border-width: 1px;
+border-radius: 5px;
+border-color: black;
+background-color:rgb(217,217,217);
+padding:3px;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="text">
+        <string>Type</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" alignment="Qt::AlignTop">
+      <widget class="QComboBox" name="magicItemAdderType_entry">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+background-color:white;
+border-style: outset;
+border-width: 1px;
+border-radius: 6px;
+border-color: black;
+padding-right:4px
+}
+
+QComboBox::hover
+{
+background-color:lightGray
+}</string>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QComboBox::AdjustToContents</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>Armor and shields</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Weapons</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Potions</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Rings</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Rods</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Scrolls</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Staffs</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Wands</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Wondrous Items</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="4" alignment="Qt::AlignTop">
+      <widget class="QComboBox" name="magicItemAdderRarity_entry">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+background-color:white;
+border-style: outset;
+border-width: 1px;
+border-radius: 6px;
+border-color: black;
+padding-right:4px
+}
+
+QComboBox::hover
+{
+background-color:lightGray
+}</string>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QComboBox::AdjustToContents</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>Common</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Uncommon</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Rare</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Very rare</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Legendary</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="QLabel" name="magicItemAdderRarity_label_2">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" alignment="Qt::AlignTop">
+      <widget class="QLineEdit" name="magicItemAdderName_entry">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+background-color: white;
+border-style: outset;
+border-width: 1px;
+border-radius: 6px;
+border-color: black
+}
+
+QLineEdit::hover{
+background-color: rgb(225, 225, 225);
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="7">
+      <widget class="QTextEdit" name="magicItemAdderDescription_textArea">
+       <property name="styleSheet">
+        <string notr="true">QTextEdit{
+background-color: white;
+border-style: outset;
+border-width: 1px;
+border-radius: 13px;
+border-color: black
+}
+
+QTextEdit::hover{
+background-color: rgb(225, 225, 225);
+}</string>
+       </property>
+       <property name="acceptRichText">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="6" alignment="Qt::AlignTop">
+      <widget class="QCheckBox" name="magicItemAdderAttunement_checkBox">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox{
+background-color: white;
+border-style: outset;
+border-width: 1px;
+border-radius: 6px;
+border-color: black;
+padding: 2}
+
+QCheckBox::indicator{
+border-color:black;
+border-style:outset;
+border-width:1px;
+border-radius:5px;
+background-color:white
+}
+
+QCheckBox::indicator:hover{
+background-color: rgb(225, 225, 225)
+}
+
+QCheckBox::indicator:checked{
+background-color: rgb(75,75,75)
+}</string>
+       </property>
+       <property name="text">
+        <string>Attunement?</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="7">
+      <widget class="QLabel" name="magicItemAdderDescription_label">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+border-style: outset;
+border-width: 1px;
+border-radius: 5px;
+border-color: black;
+background-color:rgb(217,217,217);
+padding:3px;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="text">
+        <string>Description</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="7">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="1" rowspan="2">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>10</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="5" rowspan="2">
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>10</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="3" rowspan="2">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>10</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
