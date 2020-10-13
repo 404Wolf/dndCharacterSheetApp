@@ -6,15 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1090</width>
-    <height>793</height>
+    <width>922</width>
+    <height>2446</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background: rgb(160, 160, 160)</string>
+   <string notr="true">background:rgb(177, 177, 177)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -36,6 +36,22 @@
     </item>
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_19">
+      <item>
+       <spacer name="horizontalSpacer_29">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
       <item>
        <widget class="QFrame" name="frame_13">
         <property name="maximumSize">
@@ -119,64 +135,6 @@ padding:3px;
             </size>
            </property>
           </spacer>
-         </item>
-         <item alignment="Qt::AlignRight">
-          <widget class="QLabel" name="nameEntry_label">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>220</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="baseSize">
-            <size>
-             <width>0</width>
-             <height>50</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>Lucida Sans</family>
-             <pointsize>14</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="statusTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QLabel{
-border-style: outset;
-border-width: 1px;
-border-radius: 5px;
-border-color: black;
-background-color:rgb(174, 172, 200);
-padding:3px;
-}</string>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <property name="text">
-            <string>Sheet name</string>
-           </property>
-           <property name="scaledContents">
-            <bool>true</bool>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
          </item>
          <item alignment="Qt::AlignLeft">
           <widget class="QLabel" name="sheetName_label">
@@ -501,13 +459,13 @@ background-color:rgb(134, 132, 160);
     <item>
      <widget class="QScrollArea" name="scrollArea">
       <property name="styleSheet">
-       <string notr="true">QScrollBar:vertical {
-                        background:rgb(255, 246, 230);
-                        width: 15px;
+       <string notr="true">QScrollArea:vertical {
+                        background:rgb(85, 85, 85);
+                        width: 15px
                       }
 
-QScrollBar:horizontal {
-                        background:rgb(255, 246, 230);
+QScrollArea:horizontal {
+                        background:rgb(85, 85, 85);
                         width: 15px;
                       }
 
@@ -518,8 +476,11 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical {
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="horizontalScrollBarPolicy">
-       <enum>Qt::ScrollBarAsNeeded</enum>
+       <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="widgetResizable">
        <bool>true</bool>
@@ -528,9 +489,9 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical {
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-900</y>
-         <width>1054</width>
-         <height>2134</height>
+         <y>0</y>
+         <width>910</width>
+         <height>2326</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout">
@@ -2628,304 +2589,6 @@ background-color:white
             </layout>
            </widget>
           </item>
-          <item row="2" column="6" rowspan="7" alignment="Qt::AlignTop">
-           <widget class="QFrame" name="frame_16">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QFrame{
-border-style: outset;
-border-width: 1px;
-border-radius: 14px;
-border-color: black;
-background-color:rgb(160, 141, 100);
-padding:1px;
-}
-
-QFrame::hover{
-background-color:rgb(150, 131, 90);
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QGridLayout" name="gridLayout_27">
-             <item row="1" column="0" colspan="2">
-              <widget class="QScrollArea" name="scrollArea_3">
-               <property name="minimumSize">
-                <size>
-                 <width>160</width>
-                 <height>0</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">background:transparent;
-border-width:0</string>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::NoFrame</enum>
-               </property>
-               <property name="widgetResizable">
-                <bool>true</bool>
-               </property>
-               <widget class="QWidget" name="scrollAreaWidgetContents_3">
-                <property name="geometry">
-                 <rect>
-                  <x>0</x>
-                  <y>0</y>
-                  <width>398</width>
-                  <height>370</height>
-                 </rect>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_6">
-                 <item>
-                  <widget class="QLabel" name="personalityTraits_label">
-                   <property name="styleSheet">
-                    <string notr="true">QLabel{
-border-style: outset;
-border-width: 1px;
-border-radius: 5px;
-border-color: black;
-background-color:rgb(217,217,217);
-padding:2px;
-}</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::Box</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <property name="text">
-                    <string>Personality Traits</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QTextEdit" name="personalityTraits_textArea">
-                   <property name="styleSheet">
-                    <string notr="true">QTextEdit{
-background-color: white;
-border-style: outset;
-border-width: 1px;
-border-radius: 13px;
-border-color: black
-}
-
-QTextEdit::hover{
-background-color: rgb(225, 225, 225);
-}</string>
-                   </property>
-                   <property name="acceptRichText">
-                    <bool>false</bool>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <spacer name="verticalSpacer_67">
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="sizeType">
-                    <enum>QSizePolicy::Fixed</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>7</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item>
-                  <widget class="QLabel" name="ideals_label">
-                   <property name="styleSheet">
-                    <string notr="true">QLabel{
-border-style: outset;
-border-width: 1px;
-border-radius: 5px;
-border-color: black;
-background-color:rgb(217,217,217);
-padding:2px;
-}</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::Box</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <property name="text">
-                    <string>Ideals</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QTextEdit" name="ideals_textArea">
-                   <property name="styleSheet">
-                    <string notr="true">QTextEdit{
-background-color: white;
-border-style: outset;
-border-width: 1px;
-border-radius: 13px;
-border-color: black
-}
-
-QTextEdit::hover{
-background-color: rgb(225, 225, 225);
-}</string>
-                   </property>
-                   <property name="acceptRichText">
-                    <bool>false</bool>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <spacer name="verticalSpacer_68">
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="sizeType">
-                    <enum>QSizePolicy::Fixed</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>7</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item>
-                  <widget class="QLabel" name="bonds_label">
-                   <property name="styleSheet">
-                    <string notr="true">QLabel{
-border-style: outset;
-border-width: 1px;
-border-radius: 5px;
-border-color: black;
-background-color:rgb(217,217,217);
-padding:2px;
-}</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::Box</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <property name="text">
-                    <string>Bonds</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QTextEdit" name="bonds_textArea">
-                   <property name="styleSheet">
-                    <string notr="true">QTextEdit{
-background-color: white;
-border-style: outset;
-border-width: 1px;
-border-radius: 13px;
-border-color: black
-}
-
-QTextEdit::hover{
-background-color: rgb(225, 225, 225);
-}</string>
-                   </property>
-                   <property name="acceptRichText">
-                    <bool>false</bool>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <spacer name="verticalSpacer_69">
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="sizeType">
-                    <enum>QSizePolicy::Fixed</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>7</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item>
-                  <widget class="QLabel" name="flaws_label">
-                   <property name="styleSheet">
-                    <string notr="true">QLabel{
-border-style: outset;
-border-width: 1px;
-border-radius: 5px;
-border-color: black;
-background-color:rgb(217,217,217);
-padding:2px;
-}</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::Box</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <property name="text">
-                    <string>Flaws</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QTextEdit" name="flaws_textArea">
-                   <property name="styleSheet">
-                    <string notr="true">QTextEdit{
-background-color: white;
-border-style: outset;
-border-width: 1px;
-border-radius: 13px;
-border-color: black
-}
-
-QTextEdit::hover{
-background-color: rgb(225, 225, 225);
-}</string>
-                   </property>
-                   <property name="acceptRichText">
-                    <bool>false</bool>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QFrame" name="frame_17">
-                   <property name="styleSheet">
-                    <string notr="true"/>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_7"/>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
           <item row="2" column="5">
            <spacer name="horizontalSpacer_14">
             <property name="orientation">
@@ -3313,6 +2976,304 @@ background-color: rgb(75,75,75)
             </layout>
            </widget>
           </item>
+          <item row="2" column="6" rowspan="5">
+           <widget class="QFrame" name="frame_16">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+border-style: outset;
+border-width: 1px;
+border-radius: 14px;
+border-color: black;
+background-color:rgb(160, 141, 100);
+padding:1px;
+}
+
+QFrame::hover{
+background-color:rgb(150, 131, 90);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_27">
+             <item row="1" column="0" colspan="2">
+              <widget class="QScrollArea" name="scrollArea_3">
+               <property name="minimumSize">
+                <size>
+                 <width>160</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background:transparent;
+border-width:0</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>-60</y>
+                  <width>260</width>
+                  <height>418</height>
+                 </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="personalityTraits_label">
+                   <property name="styleSheet">
+                    <string notr="true">QLabel{
+border-style: outset;
+border-width: 1px;
+border-radius: 5px;
+border-color: black;
+background-color:rgb(217,217,217);
+padding:2px;
+}</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <property name="text">
+                    <string>Personality Traits</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTextEdit" name="personalityTraits_textArea">
+                   <property name="styleSheet">
+                    <string notr="true">QTextEdit{
+background-color: white;
+border-style: outset;
+border-width: 1px;
+border-radius: 13px;
+border-color: black
+}
+
+QTextEdit::hover{
+background-color: rgb(225, 225, 225);
+}</string>
+                   </property>
+                   <property name="acceptRichText">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_67">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Fixed</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>7</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="ideals_label">
+                   <property name="styleSheet">
+                    <string notr="true">QLabel{
+border-style: outset;
+border-width: 1px;
+border-radius: 5px;
+border-color: black;
+background-color:rgb(217,217,217);
+padding:2px;
+}</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <property name="text">
+                    <string>Ideals</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTextEdit" name="ideals_textArea">
+                   <property name="styleSheet">
+                    <string notr="true">QTextEdit{
+background-color: white;
+border-style: outset;
+border-width: 1px;
+border-radius: 13px;
+border-color: black
+}
+
+QTextEdit::hover{
+background-color: rgb(225, 225, 225);
+}</string>
+                   </property>
+                   <property name="acceptRichText">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_68">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Fixed</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>7</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="bonds_label">
+                   <property name="styleSheet">
+                    <string notr="true">QLabel{
+border-style: outset;
+border-width: 1px;
+border-radius: 5px;
+border-color: black;
+background-color:rgb(217,217,217);
+padding:2px;
+}</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <property name="text">
+                    <string>Bonds</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTextEdit" name="bonds_textArea">
+                   <property name="styleSheet">
+                    <string notr="true">QTextEdit{
+background-color: white;
+border-style: outset;
+border-width: 1px;
+border-radius: 13px;
+border-color: black
+}
+
+QTextEdit::hover{
+background-color: rgb(225, 225, 225);
+}</string>
+                   </property>
+                   <property name="acceptRichText">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_69">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Fixed</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>7</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="flaws_label">
+                   <property name="styleSheet">
+                    <string notr="true">QLabel{
+border-style: outset;
+border-width: 1px;
+border-radius: 5px;
+border-color: black;
+background-color:rgb(217,217,217);
+padding:2px;
+}</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <property name="text">
+                    <string>Flaws</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTextEdit" name="flaws_textArea">
+                   <property name="styleSheet">
+                    <string notr="true">QTextEdit{
+background-color: white;
+border-style: outset;
+border-width: 1px;
+border-radius: 13px;
+border-color: black
+}
+
+QTextEdit::hover{
+background-color: rgb(225, 225, 225);
+}</string>
+                   </property>
+                   <property name="acceptRichText">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_17">
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_7"/>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
          </layout>
         </item>
         <item>
@@ -3426,8 +3387,8 @@ border-width:0</string>
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>255</width>
-                    <height>370</height>
+                    <width>195</width>
+                    <height>418</height>
                    </rect>
                   </property>
                   <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -8213,7 +8174,6 @@ border-width: 1px;
 border-radius: 14px;
 border-color: black;
 background-color:rgb(160, 141, 100);
-padding:1px;
 }
 
 QFrame::hover{
@@ -8620,7 +8580,7 @@ QScrollBar:horizontal {
               <rect>
                <x>0</x>
                <y>0</y>
-               <width>497</width>
+               <width>425</width>
                <height>1194</height>
               </rect>
              </property>

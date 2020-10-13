@@ -1,3 +1,19 @@
+magicItemRefresh = False
+weaponRefresh = False
+statChange = False
+times = False
+doneSettingName = False
+loadTemplate = False
+firstRun = True
+
+pendingMagicItem = {}
+template = {}
+pendingWeapon = {}
+
+magicItemCounter = 1
+weaponCounter = 1
+x = 1
+
 skills = {
 "acrobatics":"dexterity",
 "animalHandling":"wisdom",
